@@ -1,5 +1,5 @@
 Stirling Weather App
--Please Npm Intall
+-Please Npm Install
 
 -Frontend Tools: 
 1. Material UI
