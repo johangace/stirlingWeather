@@ -15,7 +15,6 @@ import rainy from './assets/rainz.jpg'
 import scattered from './assets/scattered.jpg'
 import Grid from '@material-ui/core/Grid'
 import { Typography } from '@material-ui/core'
-require('dotenv').config()
 const BackgroundImg = styled.img`
   position: absolute;
   height: 100vh;
@@ -56,7 +55,8 @@ class App extends React.Component {
   handleSearchCity = (e) => {
     e.preventDefault()
     const { value } = this.state
-    const APIkey = process.env.OPENWEATHER_API_KEY
+    //leaving it out for Stirling team reference
+    const APIkey = 'f2fd8c9ea077f6186c348b1f2a13640e'
 
     const weather = `https://api.openweathermap.org/data/2.5/weather?q=${value}&APPID=${APIkey}&units=metric`
     const forecast = `https://api.openweathermap.org/data/2.5/forecast?q=${value}&APPID=${APIkey}&units=metric`
